@@ -1,0 +1,59 @@
+.container-main h1,
+.container-main h2,
+.container-main h3,
+.container-main h4,
+.container-main span {
+  color: white;
+  background: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 91.3vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.video-fundo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.container-main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+.content-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 1;
+  gap: 220px;
+  
+}
+.efeito-escrita {
+  width: 400px;
+}
+.photo-me {
+  position: relative;
+  z-index: 1;
+  max-width: 250px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}

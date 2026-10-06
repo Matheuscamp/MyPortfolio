@@ -13,5 +13,5 @@
 
 .relogio__hora {
   color: #6db3ff;
-  font-variant-numeric: tabular-nums; /* evita os números "pulando" a cada segundo */
+  font-variant-numeric: tabular-nums;
 }
