@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: medium;
-    background-color: #1a1917;
-    height: 4rem;
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: medium;
+  height: 4rem;
+  background-color: #1a1917;
 }
-.container-header{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.container-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.options-header, p{
-    padding: 0.9rem;
-    color: #9ea094;
+.options-header,
+p {
+  padding: 0.9rem;
+  color: #9ea094;
 }
