@@ -17,7 +17,7 @@ function Main() {
       <div className="content-main">
         <div className="content-main-left">
           <div>
-            <h4>Olá, eu sou</h4>
+            <h4>Hi, I'm</h4>
             <h2>Matheus Campos</h2>
           </div>
 

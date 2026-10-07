@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
 import About from "./components/About";
+import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
       <Header />
       <Main />
       <About />
+      <Projects />
+      
     </>
   );
 }

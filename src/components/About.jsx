@@ -10,7 +10,7 @@ function About() {
         <h1>About</h1>
 
         <p className="text">
-          I'm an intern at Investi Minas and Software Engineering student at PUC Minas, building a
+          I'm an intern at Invest Minas and Software Engineering student at PUC Minas, building a
           solid foundation with React, JavaScript and MySQL. My focus is
           Information Security: pentesting, vulnerability analysis and
           understanding how systems work under the hood, from networking and
