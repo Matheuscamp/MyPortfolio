@@ -1,0 +1,42 @@
+.container-stack {
+  color: #edebe6;
+  background-color: #1a1917;
+  min-height: 90vh;
+  padding: 110px;
+}
+.stack-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.container-stack .grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 20px;
+  padding-top: 50px;
+}
+
+.section {
+  border-top: 1px solid #2f2e2c;
+  padding-top: 20px;
+}
+
+.section h3 {
+  color: #9a9a9a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 0 16px;
+}
+
+.section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section li {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
