@@ -8,8 +8,9 @@ function Header() {
             <RelogioLocal/>
         </div>
         <div className="container-header">
-            <span className="options-header">Work</span>
             <span className="options-header">About</span>
+            <span className="options-header">Work</span>
+            <span className="options-header">Experience</span>
             <span className="options-header">Contact</span>
         </div>
 

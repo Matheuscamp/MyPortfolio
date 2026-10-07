@@ -4,3 +4,6 @@
   box-sizing: border-box;
   font-family: "JetBrains Mono", monospace;
 }
+html {
+  scroll-behavior: smooth;
+}
