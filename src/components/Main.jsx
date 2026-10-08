@@ -17,8 +17,8 @@ function Main() {
       <div className="content-main">
         <div className="content-main-left">
           <div>
-            <h4>Hi, I'm</h4>
-            <h2>Matheus Campos</h2>
+            <h2>Hi, I'm</h2>
+            <h1>Matheus Campos</h1>
           </div>
 
           <div className="efeito-escrita">
@@ -26,7 +26,13 @@ function Main() {
           </div>
         </div>
 
-        <img className="photo-me" src={photoMe} alt="Foto de Matheus Campos" />
+        <div>
+          <img
+            className="photo-me"
+            src={photoMe}
+            alt="Foto de Matheus Campos"
+          />
+        </div>
       </div>
     </div>
   );
