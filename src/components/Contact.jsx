@@ -5,7 +5,7 @@ import github from "../assets/imgs/github-icon.png";
 
 function Contact() {
   return (
-    <div className="contact-section">
+    <div id="contacts" className="contact-section">
       <h1>Let's create together</h1>
 
       <div className="links-contacts">

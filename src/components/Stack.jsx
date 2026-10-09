@@ -1,7 +1,7 @@
 import "./Stack.css";
 function Stack() {
   return (
-    <div className="container-stack">
+    <div id="stacks" className="container-stack">
       <div class="stack-content">
         <div className="texts-section">
           <h1>Stacks</h1>

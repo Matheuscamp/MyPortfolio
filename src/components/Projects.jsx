@@ -5,7 +5,7 @@ import dashboardFinanceiro from "../assets/imgs/Dashboard-financeiro.png";
 import painelProtege from "../assets/imgs/Painel-Protege.png";
 function Projects() {
   return (
-    <div className="container-projects">
+    <div id="projects" className="container-projects">
       <div className="Texts-section">
         <h1>Projects</h1>
         <p>

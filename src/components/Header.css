@@ -8,6 +8,13 @@ header {
   height: 4rem;
   background-color: #1a1917;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.options-header {
+  cursor: pointer;
+}
 .container-header {
   display: flex;
   flex-direction: row;

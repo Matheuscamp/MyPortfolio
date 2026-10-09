@@ -1,7 +1,7 @@
 import "./Experiences.css";
 function Experiences() {
   return (
-    <div className="Experiences-container">
+    <div id="experiences" className="Experiences-container">
       <h1>Experiences</h1>
       <div className="flex-container">
         <div className="experience-card">
