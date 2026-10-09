@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import Experiences from "./components/Experiences";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Stack />
       <Experiences />
+      <Contact />
     </>
   );
 }
