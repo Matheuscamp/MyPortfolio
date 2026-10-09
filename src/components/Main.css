@@ -55,3 +55,28 @@
   box-shadow: 3px 3px 3px black;
   border-radius: 8px;
 }
+@media (max-width: 1024px) {
+  .content-main {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-main {
+    min-height: auto;
+    padding: 60px 20px;
+  }
+  .content-main {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .efeito-escrita {
+    width: 100%;
+    max-width: 400px;
+  }
+  .photo-me {
+    width: 220px;
+    height: 300px;
+  }
+}

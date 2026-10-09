@@ -40,3 +40,23 @@
   font-size: 22px;
   margin-bottom: 14px;
 }
+@media (max-width: 1024px) {
+  .container-stack {
+    padding: 60px 40px;
+  }
+  .container-stack .grid-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .container-stack {
+    padding: 40px 20px;
+  }
+  .container-stack .grid-section {
+    grid-template-columns: 1fr;
+  }
+  .section li {
+    font-size: 18px;
+  }
+}

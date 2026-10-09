@@ -23,3 +23,29 @@
     border-top: 1px solid #2f2e2c;
     width: 80%;
 }
+@media (max-width: 1024px) {
+  .Experiences-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .experience-card {
+    gap: 40px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .Experiences-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .experience-card {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+    padding-top: 24px;
+  }
+}

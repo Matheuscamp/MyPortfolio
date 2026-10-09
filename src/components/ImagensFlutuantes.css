@@ -55,25 +55,25 @@
 
 @media (max-width: 768px) {
   .flutuante {
-    width: 65px;
+    width: 365px;
     opacity: 0.65;
   }
 
   .cachorro {
-    top: 10%;
-    left: 3%;
-    width: 70px;
+    top: 5%;
+    left: -10%;
+    width: 400px;
   }
 
   .pizza {
     top: 12%;
-    right: 3%;
-    width: 65px;
+    right: -10%;
+    width: 400px;
   }
 
   .basquete {
-    bottom: 8%;
-    left: 5%;
-    width: 60px;
+    bottom: -30%;
+    left: 0%;
+    width: 400px;
   }
 }
