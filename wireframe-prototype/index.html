@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe — MyPortfolio</title>
+  <style>
+    :root { font-family: Arial, sans-serif; color: #222; background: #f3f4f6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header, section, footer { border: 2px solid #9ca3af; background: #fff; margin: 16px auto; padding: 24px; max-width: 1100px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    nav { display:flex; flex-wrap:wrap; gap:16px; }
+    a { color:#374151; }
+    .label { color:#6b7280; font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+    .hero, .about { display:grid; grid-template-columns: 1.4fr 1fr; gap:24px; align-items:center; min-height:260px; }
+    .placeholder { border:2px dashed #9ca3af; background:#e5e7eb; min-height:150px; display:grid; place-items:center; color:#6b7280; padding:16px; text-align:center; }
+    .buttons, .tags { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .button, .tag, .card { border:1px solid #9ca3af; padding:10px 14px; background:#f9fafb; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card .placeholder { min-height:100px; margin-bottom:12px; }
+    footer { text-align:center; }
+    @media (max-width:700px) {
+      header { align-items:flex-start; flex-direction:column; }
+      .hero, .about { grid-template-columns:1fr; }
+      .grid { grid-template-columns:1fr; }
+      header, section, footer { margin:10px; padding:18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>MC / MyPortfolio</strong>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="hero">
+      <div>
+        <p class="label">Wireframe · Início</p>
+        <h1>Olá, eu sou Matheus Campos</h1>
+        <h2>Estudante de Engenharia de Software</h2>
+        <p>Apresentação breve, interesses em desenvolvimento web e segurança da informação.</p>
+        <div class="buttons"><a class="button" href="#projetos">Ver projetos</a><a class="button" href="#contato">Entrar em contato</a></div>
+      </div>
+      <div class="placeholder">Espaço para avatar, ilustração ou elemento visual</div>
+    </section>
+    <section id="sobre" class="about">
+      <div><p class="label">Wireframe · Sobre</p><h2>Sobre mim</h2><p>Resumo da trajetória acadêmica, experiências e objetivos profissionais.</p></div>
+      <div class="placeholder">Bloco para informações complementares</div>
+    </section>
+    <section id="habilidades">
+      <p class="label">Wireframe · Habilidades</p><h2>Habilidades e tecnologias</h2>
+      <div class="tags"><span class="tag">React</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Git/GitHub</span><span class="tag">Linux</span></div>
+      <p>Substitua ou ajuste as tags para refletir as tecnologias que você realmente utiliza.</p>
+    </section>
+    <section id="projetos">
+      <p class="label">Wireframe · Projetos</p><h2>Projetos em destaque</h2>
+      <div class="grid">
+        <article class="card"><div class="placeholder">Miniatura do projeto</div><h3>Projeto 01</h3><p>Descrição curta e tecnologias utilizadas.</p><a href="#contato">Ver projeto / código</a></article>
+        <article class="card"><div class="placeholder">Miniatura do projeto</div><h3>Projeto 02</h3><p>Descrição curta e tecnologias utilizadas.</p><a href="#contato">Ver projeto / código</a></article>
+        <article class="card"><div class="placeholder">Miniatura do projeto</div><h3>Projeto 03</h3><p>Descrição curta e tecnologias utilizadas.</p><a href="#contato">Ver projeto / código</a></article>
+      </div>
+    </section>
+    <section id="contato">
+      <p class="label">Wireframe · Contato</p><h2>Vamos conversar?</h2><p>Texto curto e links de contato profissional.</p>
+      <div class="buttons"><a class="button" href="https://github.com/Matheuscamp/MyPortfolio" target="_blank" rel="noreferrer">GitHub</a><a class="button" href="https://www.matheuscamp.dev/" target="_blank" rel="noreferrer">Site publicado</a></div>
+    </section>
+  </main>
+  <footer><p>Matheus Campos · MyPortfolio</p><p class="label">Rodapé / links institucionais</p></footer>
+</body>
+</html>
