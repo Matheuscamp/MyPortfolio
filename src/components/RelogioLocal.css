@@ -2,16 +2,11 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 0.9rem;
   font-size: 0.95rem;
   white-space: nowrap;
 }
 
-.relogio__local {
-  color: #c9c9cf;
-}
-
 .relogio__hora {
-  color: #6db3ff;
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }

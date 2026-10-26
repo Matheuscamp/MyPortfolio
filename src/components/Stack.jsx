@@ -1,50 +1,48 @@
 import "./Stack.css";
+
+const grupos = [
+  {
+    titulo: "FRONTEND",
+    itens: ["React.js", "Thymeleaf", "HTML", "CSS", "Bootstrap"],
+  },
+  { titulo: "BACKEND", itens: ["Spring Boot", "MySQL"] },
+  {
+    titulo: "CYBER SECURITY",
+    itens: ["Kali Linux", "Network", "Infrastructure"],
+  },
+  { titulo: "TOOLS", itens: ["GitHub", "Git", "Excel", "Power BI"] },
+];
+
 function Stack() {
   return (
-    <div id="stacks" className="container-stack">
-      <div class="stack-content">
-        <div className="texts-section">
-          <h1>Stacks</h1>
-          <p>Some of the tools I use day to day and somthings I study</p>
+    <section id="stacks" className="section">
+      <div className="container">
+        <div data-reveal>
+          <h1 className="section-title">Stacks</h1>
+          <p className="section-subtitle">
+            Some of the tools I use day to day and some things I study
+          </p>
         </div>
-        <div className="grid-section">
-          <article className="section">
-            <h3>FRONTEND</h3>
-            <ul>
-              <li>React.js</li>
-              <li>Thymeleaf</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Bootstrap</li>
-            </ul>
-          </article>
-          <article className="section">
-            <h3>BACKEND</h3>
-            <ul>
-              <li>Spring Boot</li>
-              <li>MySQL</li>
-            </ul>
-          </article>
-          <article className="section">
-            <h3>CYBER SECURITY</h3>
-            <ul>
-              <li>Kali Linux</li>
-              <li>Network</li>
-              <li>Infrastructure</li>
-            </ul>
-          </article>
-          <article className="section">
-            <h3>TOOLS</h3>
-            <ul>
-              <li>GitHub</li>
-              <li>Git</li>
-              <li>Excel</li>
-              <li>Power BI</li>
-            </ul>
-          </article>
+        <div className="stack-grid">
+          {grupos.map((grupo, i) => (
+            <article
+              key={grupo.titulo}
+              className="stack-group"
+              data-reveal
+              style={{ "--reveal-delay": `${i * 100}ms` }}
+            >
+              <h3>{grupo.titulo}</h3>
+              <ul>
+                {grupo.itens.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
+
 export default Stack;

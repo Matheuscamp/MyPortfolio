@@ -1,51 +1,75 @@
-.Experiences-container{
-    color: #edebe6;
-    background-color: #1a1917;
-    font-family: sans-serif;
-    min-height: 90vh;
-    padding-left: 200px;
-    padding-right: 200px;
+.experience-list {
+  padding-top: 24px;
 }
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+.experience-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  align-items: start;
+  gap: clamp(16px, 6vw, 90px);
+  padding-block: 32px;
+  border-top: 1px solid var(--border);
 }
-.experience-card{
-    display: flex;
-    flex-direction: row;
-    align-items:flex-start;
-    justify-content: flex-start;
-    padding-top: 40px;
-    margin-top: 50px;
-    gap: 90px;
-    border-top: 1px solid #2f2e2c;
-    width: 80%;
+
+.experience-card:last-child {
+  border-bottom: 1px solid var(--border);
 }
-@media (max-width: 1024px) {
-  .Experiences-container {
-    padding-left: 60px;
-    padding-right: 60px;
+
+.experience-card h3 {
+  font-size: 1.15rem;
+  transition: color 0.25s ease;
+}
+
+.experience-card:hover h3 {
+  color: var(--accent);
+}
+
+.experience-period {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.experience-role {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Indicador "atual" pulsando */
+.pulse {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4ade80;
+  flex-shrink: 0;
+}
+
+.pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: #4ade80;
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
   }
-  .experience-card {
-    gap: 40px;
-    width: 100%;
+  to {
+    transform: scale(3);
+    opacity: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .Experiences-container {
-    padding-left: 20px;
-    padding-right: 20px;
-    min-height: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
   .experience-card {
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 30px;
-    padding-top: 24px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-block: 24px;
   }
 }

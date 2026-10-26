@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import RelogioLocal from "./RelogioLocal";
 import "./Header.css";
 
@@ -22,11 +23,21 @@ function rolarSuave(destinoY, duracao = 1200) {
 }
 
 function Header() {
-  const irParaSecao = (id) => {
+  const [rolou, setRolou] = useState(false);
+
+  useEffect(() => {
+    const aoRolar = () => setRolou(window.scrollY > 10);
+    aoRolar();
+    window.addEventListener("scroll", aoRolar, { passive: true });
+    return () => window.removeEventListener("scroll", aoRolar);
+  }, []);
+
+  const irParaSecao = (evento, id) => {
+    evento.preventDefault();
     const secao = document.getElementById(id);
     if (!secao) return;
 
-    const offset = 80;
+    const offset = 64;
     const y = secao.getBoundingClientRect().top + window.scrollY - offset;
 
     rolarSuave(y, 1200);
@@ -41,20 +52,21 @@ function Header() {
   ];
 
   return (
-    <header>
-      <div className="container-header">
+    <header className={`site-header${rolou ? " is-scrolled" : ""}`}>
+      <div className="container header-inner">
         <RelogioLocal />
-      </div>
-      <div className="container-header">
-        {links.map((link) => (
-          <span
-            key={link.id}
-            className="options-header"
-            onClick={() => irParaSecao(link.id)}
-          >
-            {link.label}
-          </span>
-        ))}
+        <nav className="nav-header">
+          {links.map((link) => (
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              className="options-header"
+              onClick={(evento) => irParaSecao(evento, link.id)}
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
       </div>
     </header>
   );

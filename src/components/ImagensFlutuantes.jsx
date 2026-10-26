@@ -1,17 +1,41 @@
 import "./ImagensFlutuantes.css";
 
-import cachorro from "../assets/imgs/dog-img.png";
-import pizza from "../assets/imgs/pizza-img.png";
-import basquete from "../assets/imgs/ball-img.png";
+import cachorro from "../assets/imgs/dog-img.webp";
+import pizza from "../assets/imgs/pizza-img.webp";
+import basquete from "../assets/imgs/ball-img.webp";
 
 function ImagensFlutuantes() {
   return (
     <div className="imagens-flutuantes">
-      <img src={cachorro} alt="" className="flutuante cachorro" />
+      <img
+        src={cachorro}
+        alt=""
+        width="320"
+        height="366"
+        loading="lazy"
+        decoding="async"
+        className="flutuante cachorro"
+      />
 
-      <img src={pizza} alt="" className="flutuante pizza" />
+      <img
+        src={pizza}
+        alt=""
+        width="320"
+        height="270"
+        loading="lazy"
+        decoding="async"
+        className="flutuante pizza"
+      />
 
-      <img src={basquete} alt="" className="flutuante basquete" />
+      <img
+        src={basquete}
+        alt=""
+        width="320"
+        height="322"
+        loading="lazy"
+        decoding="async"
+        className="flutuante basquete"
+      />
     </div>
   );
 }

@@ -1,40 +1,36 @@
 .imagens-flutuantes {
   position: relative;
-  width: 450px;
-  height: 350px;
-  overflow: visible;
+  width: min(100%, 400px);
+  aspect-ratio: 4 / 3.4;
   pointer-events: none;
 }
 
 .flutuante {
   position: absolute;
   height: auto;
-  object-fit: contain;
-  opacity: 0.85;
+  opacity: 0.9;
   filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.25));
   animation: flutuar 5s ease-in-out infinite;
 }
 
 .cachorro {
-  top: 0;
-  left: -20px;
-  width: 350px;
+  top: 2%;
+  left: 6%;
+  width: 34%;
   animation-delay: 0s;
 }
 
 .pizza {
-  top: 0;
-  right: -20px;
-  width: 350px;
-
+  top: 12%;
+  right: 6%;
+  width: 36%;
   animation-delay: 1s;
 }
 
 .basquete {
-  bottom: -20px;
-  left: 50px;
-  width: 350px;
-
+  bottom: 2%;
+  left: 36%;
+  width: 30%;
   animation-delay: 2s;
 }
 
@@ -48,32 +44,5 @@
 
   50% {
     transform: translateY(-22px) rotate(3deg);
-  }
-}
-
-/* Ajustes para celulares */
-
-@media (max-width: 768px) {
-  .flutuante {
-    width: 365px;
-    opacity: 0.65;
-  }
-
-  .cachorro {
-    top: 5%;
-    left: -10%;
-    width: 400px;
-  }
-
-  .pizza {
-    top: 12%;
-    right: -10%;
-    width: 400px;
-  }
-
-  .basquete {
-    bottom: -30%;
-    left: 0%;
-    width: 400px;
   }
 }

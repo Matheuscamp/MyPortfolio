@@ -5,7 +5,7 @@ function EfeitoEscrita() {
     <h1>
       <Typewriter
         options={{
-          strings: ['Software Enginner', 'Cyber Security'],
+          strings: ['Software Engineer', 'Cyber Security'],
           autoStart: true,
           loop: true,
         }}
